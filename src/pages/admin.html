@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/font.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="stylesheet" href="../styles/toast.css">
+    <script src="https://kit.fontawesome.com/9a025822ca.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <nav class="header-container container">
+            <div class="logo">
+                <div class="ball"></div>
+                <h3>Kenzie Empresas</h3>
+            </div>
+            <button class="menu-button not-a-button"><i class="fa-solid fa-bars fa-2x"></i></button>
+            <div class="menu hidden">
+                <a class="button button-second" id="button-logout" href="../../index.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="container-departaments">
+                <div class="departaments-header">
+                    <h2>Departamentos</h2>
+                    <form class="container-admin-actions">
+                        <select name="enterprises" id="enterprise-admin-actions" class="input-select input-select-second input-select-third enterprise">
+                            <option value="">Selecionar Empresa</option>
+                        </select>
+                        <button type="button" class="button" id="button-open-create-departament-modal"><i class="fa-solid fa-plus"></i> Criar</button>
+                    </form>
+                </div>
+                <div class="container-list">
+                    <ul class="all-departaments">
+                        
+                    </ul>
+                </div>
+            </section>
+            <section class="container-users">
+                <h2>Usuários cadastrados</h2>
+                <div class="container-list">
+                    <ul class="all-users">
+                        
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="container-modal-edit-user container-modal hidden">
+            <div class="modal">
+                <div class="header-modal">
+                    <h1>Editar Usuário</h1>
+                    <button class="button-close"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                 </div>
+                 <form>
+                    <select name="work-modality" id="work-modality" class="input-select input-select-second">
+                        <option value="none">Selecionar modalidade de trabalho</option>
+                        <option value="home office">Home office</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="hibrido">Hibrido</option>
+                    </select>
+                    <select name="professional-level" id="professional-level" class="input-select input-select-second">
+                        <option value="">Selecionar o nível profissional</option>
+                        <option value="estágio">Estágio</option>
+                        <option value="júnior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="sênior">Senior</option>
+                    </select>
+                    <button type="button" class="button" id="button-edit-user">Editar</button>
+                 </form>
+            </div>
+        </section>
+        <section class="container-modal-create-departament container-modal hidden">
+            <div class="modal">
+                <div class="header-modal">
+                    <h1>Criar Departamento</h1>
+                    <button class="button-close"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                 </div>
+                 <form id="create-departament">
+                    <input type="text" class="input" placeholder="Nome do departamento" id="departament-name">
+                    <input type="text" class="input" placeholder="Descrição" id="departament-description">
+                    <select name="enterprise" id="enterprise-create-departament" class="input-select input-select-second enterprise">
+                        <option value="">Selecionar empresa</option>
+                    </select>
+                    <button type="button" class="button" id="button-create-departament">Criar o departamento</button>
+                 </form>
+            </div>
+        </section>
+        <section class="container-modal-edit-departament container-modal hidden">
+            <div class="modal">
+                <div class="header-modal">
+                    <h1>Editar Departamento</h1>
+                    <button class="button-close"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                 </div>
+                 <form>
+                    <textarea placeholder="Valores anteriores da descrição" class="input-textarea" id="newDescription"></textarea>
+                    <button type="button" class="button" id="button-save">Salvar alterações</button>
+                 </form>
+            </div>
+        </section>
+        <section class="container-modal-departament container-modal hidden">
+            
+            
+            
+        </section>
+        <div class="toast" id="toast">
+
+       </div>
+    </main>
+    <script type="module" src="../scripts/admin.js"></script>
+</body>
+</html>

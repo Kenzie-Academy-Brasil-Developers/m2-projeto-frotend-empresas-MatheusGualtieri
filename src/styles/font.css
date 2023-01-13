@@ -1,0 +1,18 @@
+h1{
+    font-size: var(--title-size-1);
+    font-weight: bold;
+}
+h2{
+    font-size: var(--title-size-2);
+    font-weight: bold;
+}
+h3{
+    font-size: var(--title-size-3);
+    font-weight: bold;
+}
+p{
+    font-size: var(--text-size-1);
+}
+strong{
+    font-weight: bold;
+}

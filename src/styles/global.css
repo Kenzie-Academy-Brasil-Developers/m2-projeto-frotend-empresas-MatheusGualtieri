@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --color-brand-1: #4200FF;
+    --color-brand-1-transparent: #4200FF80;
+    --color-brand-2-transparent: #4623A721;
+    --color-grey-0: #000000;
+    --color-grey-1: #00000033;
+    --color-grey-2: #00000080;
+    --color-grey-3: #F8F8F8;
+    --color-grey-4: #FFFFFF;
+    --color-succes: #4BA036;
+    --color-failure: #CE4646;
+
+    --font-family: 'Inter', sans-serif;
+
+    --title-size-1: 2.5rem;
+    --title-size-2: 1.25rem;
+    --title-size-3: 1rem;
+    --text-size-1: 1rem;
+
+    --border-radius-1: 50%;
+    --border-radius-2: 2rem;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media(min-width: 800px){
+    .container{
+        max-width: 1100px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/font.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/user.css">
+    <script src="https://kit.fontawesome.com/9a025822ca.js" crossorigin="anonymous"></script>
+    <title>User</title>
+</head>
+<body>
+    <header>
+        <nav class="header-container container">
+            <div class="logo">
+                <div class="ball"></div>
+                <h3>Kenzie Empresas</h3>
+            </div>
+            <button class="menu-button not-a-button"><i class="fa-solid fa-bars fa-2x"></i></button>
+            <div class="menu hidden">
+                <a class="button button-second" id="button-logout" href="../../index.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="profile">
+                <div class="profile-info">
+                    
+                </div>
+                <button class="change-info-button not-a-button"><i class="fa-solid fa-pen fa-xl"></i></button>
+            </section>
+            
+        </div>
+        <section class="modal-edit-profile hidden">
+            <div class="container-edit-profile container">
+                <div class="edit-profile-header">
+                    <h1>Editar Perfil</h1>
+                    <button class="button-close"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                </div>
+                <form>
+                    <input type="text" class="input" placeholder="Seu nome" id="name">
+                    <input type="email" class="input" placeholder="Seu e-mail" id="email">
+                    <input type="password" class="input" placeholder="Sua senha" id="password">
+                    <button type="button" class="button" id="button-confirm-edit">Editar Perfil</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../scripts/user.js"></script>
+</body>
+</html>
